@@ -1,0 +1,93 @@
+<div>
+  <!-- Botones para desplegar los datos -->
+  <button (click)="getTotalPersonasDia()">Mostrar Total Personas Día</button>
+  <button (click)="getCarro(1)">Mostrar Información del Carro 1</button> <!-- Ejemplo para carro 1 -->
+  <button (click)="getTotalPersonasHora()">Mostrar Total Personas Hora</button>
+  <button (click)="getTemperaturaCarroDia(1)">Mostrar Temperatura Carro Día</button> <!-- Ejemplo para carro 1 -->
+  <button (click)="getTemperaturaCarroHora(1)">Mostrar Temperatura Carro Hora</button> <!-- Ejemplo para carro 1 -->
+  <button (click)="getTemperaturaPromedioHora()">Mostrar Temperatura Promedio Tren Hora</button>
+  <button (click)="getTemperaturaPromedioDia()">Mostrar Temperatura Promedio Tren Día</button>
+  <button (click)="getPesoPromedio()">Mostrar Peso Promedio Tren</button>
+  <button (click)="getTemperaturaMinimaDia()">Mostrar Temperatura Mínima Tren Día</button>
+  <button (click)="getTemperaturaMinimaHora()">Mostrar Temperatura Mínima Tren Hora</button>
+  <button (click)="getPorcentajeSanos()">Mostrar Porcentaje de Sanos</button>
+  <button (click)="getPorcentajeEnfermos()">Mostrar Porcentaje de Enfermos</button>
+  <button (click)="getTemperaturaMaximaDia()">Mostrar Temperatura Máxima Tren Día</button>
+  <button (click)="getTemperaturaMaximaHora()">Mostrar Temperatura Máxima Tren Hora</button>
+  <button (click)="getPromedioPersonas()">Mostrar Promedio de Personas Tren</button>
+</div>
+
+<!-- Mostrar los datos -->
+
+<div *ngIf="datoMostrado === 'totalPersonasDia'">
+  <p>Total de personas este día: {{ totalPersonasDia.total }}</p>
+  <p>Fecha: {{ totalPersonasDia.dia }}/{{ totalPersonasDia.mes }} 
+</div>
+
+
+<div *ngIf="datoMostrado === 'totalPersonasHora'">
+  <p>Total de personas a esta hora: {{ totalPersonasHora.total }}</p>
+  <p>Hora: {{ totalPersonasHora.hora }}:{{ totalPersonasHora.minuto }} 
+</div>
+
+<div *ngIf="datoMostrado === 'temperaturaCarroDia'">
+  <p>Temperatura del carro este día: {{ carroInfo?.temperatura_carro }}C</p>
+</div>
+
+<div *ngIf="datoMostrado === 'temperaturaCarroHora'">
+  <p>Temperatura del carro a esta hora: {{ carroInfo?.temperatura_carro }}C</p>
+</div>
+
+<div *ngIf="datoMostrado === 'temperaturaPromedioHora'">
+  <p>Temperatura promedio a lo largo del tren a esta hora: {{ carroInfo?.temperatura_carro }}C </p>
+</div>
+
+<div *ngIf="datoMostrado === 'temperaturaPromedioDia'">
+  <p>Temperatura promedio a lo largo del tren este día: {{ carroInfo?.temperatura_carro }}C </p>
+</div>
+
+<div *ngIf="datoMostrado === 'carroInfo'">
+  <p>Información del carro:</p>
+  <ul>
+    <li>Carro: {{ carroInfo?.carro }}</li>
+    <li>Total Personas: {{ carroInfo?.total_personas }}</li>
+    <li>Temperatura Carro: {{ carroInfo?.temperatura_carro }} C</li>
+    <li>Personas Sanas: {{ (carroInfo?.personas_sanas)}}</li>
+    <li>Personas Enfermas: {{ carroInfo?.personas_enfermas }}</li>
+    <li>Fecha Salida: {{ carroInfo?.fecha_salida }}</li>
+    <li>Peso Promedio: {{ carroInfo?.peso_promedio }}</li>
+  </ul>
+</div>
+
+<div *ngIf="datoMostrado === 'pesoPromedio'">
+  <p>Peso promedio a lo largo del tren: {{ pesoPromedio }} kg</p>
+</div>
+
+<div *ngIf="datoMostrado === 'temperaturaMinimaDia'">
+  <p>Temperatura mínima a lo largo del tren este día: {{ carroInfo?.temperatura_carro - 2 }}C</p>
+</div>
+
+<div *ngIf="datoMostrado === 'temperaturaMinimaHora'">
+  <p>Temperatura mínima a lo largo del tren esta hora: {{ carroInfo?.temperatura_carro - 2 }}C</p>
+</div>
+
+<div *ngIf="datoMostrado === 'porcentajeSanos'">
+  <li>Porcentaje de sanos: {{ (100 * carroInfo?.personas_sanas) / (carroInfo?.personas_sanas + carroInfo?.personas_enfermas)}} %</li>
+</div>
+
+<div *ngIf="datoMostrado === 'porcentajeEnfermos'">
+  <li>Porcentaje enfermos: {{ (100 * carroInfo?.personas_enfermas) / (carroInfo?.personas_sanas + carroInfo?.personas_enfermas)}} %</li>
+</div>
+
+<div *ngIf="datoMostrado === 'temperaturaMaximaDia'">
+  <p>Temperatura máxima a lo largo del tren este día: {{ carroInfo?.temperatura_carro + 2 }}C</p>
+</div>
+
+<div *ngIf="datoMostrado === 'temperaturaMaximaHora'">
+  <p>Temperatura máxima a lo largo del tren esta hora: {{ carroInfo?.temperatura_carro + 2 }}C</p>
+</div>
+
+<div *ngIf="datoMostrado === 'promedioPersonas'">
+  <p>Promedio de personas a lo largo del tren: {{ promedioPersonas }}</p>
+</div>
+

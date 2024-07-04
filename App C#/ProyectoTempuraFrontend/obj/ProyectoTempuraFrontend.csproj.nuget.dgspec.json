@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempuraFrontend\\ProyectoTempuraFrontend.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempuraFrontend\\ProyectoTempuraFrontend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempuraFrontend\\ProyectoTempuraFrontend.csproj",
+        "projectName": "ProyectoTempuraFrontend",
+        "projectPath": "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempuraFrontend\\ProyectoTempuraFrontend.csproj",
+        "packagesPath": "C:\\Users\\Seba RC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempuraFrontend\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Seba RC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempura\\RaydenManager.csproj": {
+                "projectPath": "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempura\\RaydenManager.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempura\\RaydenManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempura\\RaydenManager.csproj",
+        "projectName": "RaydenManager",
+        "projectPath": "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempura\\RaydenManager.csproj",
+        "packagesPath": "C:\\Users\\Seba RC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seba RC\\Desktop\\ProyectoTempuraFull\\App C#\\ProyectoTempura\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Seba RC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "WatsonORM.Sqlite": {
+              "target": "Package",
+              "version": "[3.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

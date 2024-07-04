@@ -1,0 +1,25 @@
+<div style="text-align: center; margin-bottom: 20px;">
+  <!-- Sección para el botón "Generar Tren" -->
+  <div style="margin-bottom: 10px;">
+    <button style="width: 300px; height: 60px; font-size: 20px; margin-right: 10px;" (click)="generarTren()">Generar Tren</button>
+    <button style="width: 300px; height: 60px; font-size: 20px; margin-right: 10px;" (click)="eliminarCarros()">Eliminar Todos los Carros</button>
+    <button style="width: 300px; height: 60px; font-size: 20px; margin-right: 10px;" (click)="getAllCarsData()">Obtener Todos los Carros</button>
+  </div>
+
+<div *ngIf="vagones.length > 0">
+  <!-- Lista de Carros -->
+  <h2 style="text-align: center;">Lista de Carros</h2>
+  <ul>
+    <li *ngFor="let carro of vagones">
+      <p><strong>Carro:</strong> {{ carro.Carro }}</p>
+      <p><strong>Total Personas:</strong> {{ carro.Total_Personas }}</p>
+      <p><strong>Temperatura del Carro:</strong> {{ carro.TemperaturaCarro }} C</p>
+      <p><strong>Personas Sanas:</strong> {{ carro.PersonasSanas }}</p>
+      <p><strong>Personas Enfermas:</strong> {{ carro.PersonasEnfermas }}</p>
+      <p><strong>Fecha de Salida:</strong> {{ carro.FechaSalida }}</p>
+      <p><strong>Peso Promedio:</strong> {{ carro.PesoPromedio }} kg</p>
+      
+    </li>
+  </ul>
+</div>
+

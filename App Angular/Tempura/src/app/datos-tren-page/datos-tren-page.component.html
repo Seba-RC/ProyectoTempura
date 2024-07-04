@@ -1,0 +1,71 @@
+<!-- datos-tren.component.html -->
+
+<div *ngIf="totalPersonasDia">
+  <p>Total de personas este día: {{ totalPersonasDia.total }}</p>
+</div>
+
+<div *ngIf="totalPersonasHora">
+  <p>Total de personas a esta hora: {{ totalPersonasHora.total }}</p>
+</div>
+
+<div *ngIf="temperaturaCarroDia">
+  <p>Temperatura del carro este día: {{ temperaturaCarroDia }}</p>
+</div>
+
+<div *ngIf="temperaturaCarroHora">
+  <p>Temperatura del carro a esta hora: {{ temperaturaCarroHora }}</p>
+</div>
+
+<div *ngIf="temperaturaPromedioHora">
+  <p>Temperatura promedio a lo largo del tren a esta hora: {{ temperaturaPromedioHora }}</p>
+</div>
+
+<div *ngIf="temperaturaPromedioDia">
+  <p>Temperatura promedio a lo largo del tren este día: {{ temperaturaPromedioDia }}</p>
+</div>
+
+<div *ngIf="carroInfo">
+  <p>Información del carro:</p>
+  <ul>
+    <li>Carro: {{ carroInfo.carro }}</li>
+    <li>Total Personas: {{ carroInfo.total_personas }}</li>
+    <li>Temperatura Carro: {{ carroInfo.temperatura_carro }}</li>
+    <li>Personas Sanas: {{ carroInfo.personas_sanas }}</li>
+    <li>Personas Enfermas: {{ carroInfo.personas_enfermas }}</li>
+    <li>Fecha Salida: {{ carroInfo.fecha_salida }}</li>
+    <li>Peso Promedio: {{ carroInfo.peso_promedio }}</li>
+  </ul>
+</div>
+
+<div *ngIf="pesoPromedio">
+  <p>Peso promedio a lo largo del tren: {{ pesoPromedio }}</p>
+</div>
+
+<div *ngIf="temperaturaMinimaDia">
+  <p>Temperatura mínima a lo largo del tren este día: {{ temperaturaMinimaDia }}</p>
+</div>
+
+<div *ngIf="temperaturaMinimaHora">
+  <p>Temperatura mínima a lo largo del tren esta hora: {{ temperaturaMinimaHora }}</p>
+</div>
+
+<div *ngIf="porcentajeSanos">
+  <p>Porcentaje de sanos: {{ porcentajeSanos }}%</p>
+</div>
+
+<div *ngIf="porcentajeEnfermos">
+  <p>Porcentaje de enfermos: {{ porcentajeEnfermos }}%</p>
+</div>
+
+<div *ngIf="temperaturaMaximaDia">
+  <p>Temperatura máxima a lo largo del tren este día: {{ temperaturaMaximaDia }}</p>
+</div>
+
+<div *ngIf="temperaturaMaximaHora">
+  <p>Temperatura máxima a lo largo del tren esta hora: {{ temperaturaMaximaHora }}</p>
+</div>
+
+<div *ngIf="promedioPersonas">
+  <p>Promedio de personas en el tren: {{ promedioPersonas }}</p>
+</div>
+

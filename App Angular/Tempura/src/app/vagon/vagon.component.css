@@ -1,0 +1,12 @@
+
+/* Estilos para VagonComponent */
+.vagon-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+.vagon-item {
+  margin-bottom: 10px;
+}
+
